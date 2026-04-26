@@ -23,12 +23,21 @@ class Card {
         this.isFaceUp = false;
     }
 
-    public String getSymbol() { return symbol; }
-    public boolean isMatched() { return isMatched; }
-    public void setMatched(boolean matched) { isMatched = matched; }
-    public boolean isFaceUp() { return isFaceUp; }
-    public void setFaceUp(boolean faceUp) { isFaceUp = faceUp; }
-
+    public String getSymbol() { 
+        return symbol; 
+    }
+    public boolean isMatched() { 
+        return isMatched; 
+    }
+    public void setMatched(boolean matched) { 
+        isMatched = matched; 
+    }
+    public boolean isFaceUp() { 
+        return isFaceUp; 
+    }
+    public void setFaceUp(boolean faceUp) { 
+        isFaceUp = faceUp; 
+    }
 
     public String toString() {
         if (isMatched || isFaceUp) {
@@ -50,12 +59,22 @@ class Player {
         this.attempts = 0;
     }
 
-    public String getName() { return name; }
-    public int getScore() { return score; }
-    public int getAttempts() { return attempts; }
+    public String getName() { 
+        return name; 
+    }
+    public int getScore() { 
+        return score; 
+    }
+    public int getAttempts() { 
+        return attempts; 
+    }
 
-    public void addPoint() { score++; }
-    public void addAttempt() { attempts++; }
+    public void addPoint() { 
+        score++; 
+    }
+    public void addAttempt() { 
+        attempts++; 
+    }
 
     public double getAccuracy() {
         if (attempts == 0) return 0;
